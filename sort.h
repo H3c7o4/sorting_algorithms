@@ -21,5 +21,6 @@ typedef struct listint_s
 /* Functions' prototypes */
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
+void swap_2numbers(int *array, unsigned int index1, unsigned int index2);
 
 #endif /* SORT_H_ */
