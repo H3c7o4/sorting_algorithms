@@ -5,6 +5,8 @@
  * @array: Array of integer
  * @index1: index of the first number to swap in the array
  * @index2: index of the second number to swap in the array
+ *
+ * Return: Nothing
  */
 
 void swap_2numbers(int *array, unsigned int index1, unsigned int index2)
