@@ -12,6 +12,7 @@ void bubble_sort(int *array, size_t size)
 {
 	unsigned int i, j;
 	char *symbol = "";
+	int a;
 
 	for (i = 0; i < size - 1; i++)
 	{
@@ -19,7 +20,9 @@ void bubble_sort(int *array, size_t size)
 		{
 			if (array[j] > array[j + 1])
 			{
-				swap_2numbers(array, j, j + 1);
+				a = array[j];
+				array[j] = array[j + 1];
+				array[j + 1] = a;
 				print_array(array, size);
 			}
 		}
