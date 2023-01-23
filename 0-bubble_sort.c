@@ -10,9 +10,13 @@
 
 void bubble_sort(int *array, size_t size)
 {
-	unsigned int i, j;
+	unsigned int i, j, swap;
 	char *symbol = "";
-	int a;
+
+	if (size < 2)
+	{
+		return;
+	}
 
 	for (i = 0; i < size - 1; i++)
 	{
@@ -20,9 +24,9 @@ void bubble_sort(int *array, size_t size)
 		{
 			if (array[j] > array[j + 1])
 			{
-				a = array[j];
+				swap = array[j];
 				array[j] = array[j + 1];
-				array[j + 1] = a;
+				array[j + 1] = swap;
 				print_array(array, size);
 			}
 		}
